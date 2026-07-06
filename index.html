@@ -530,6 +530,19 @@
       font-size:13px;
     }
 
+    .story-cover{
+      display:none;
+      width:100%;
+      max-height:420px;
+      object-fit:cover;
+      object-position:center;
+      border-radius:18px;
+      border:1px solid rgba(216,181,106,.18);
+      background:rgba(0,0,0,.28);
+      margin:8px 0 14px;
+      box-shadow:0 14px 36px rgba(0,0,0,.34);
+    }
+
     .story-card .btn{
       margin-top:auto;
       width:max-content;
@@ -632,7 +645,8 @@
       ed3: "editorial-glamour-1.jpg",
       ed4: "editorial-speaks-2.jpg",
       ed5: "editorial-glamour-2.jpg",
-      ed6: "editorial-ceo-1.jpg"
+      ed6: "editorial-ceo-1.jpg",
+      whispersCover: "whispers-of-the-heart-cover.jpg"
     };
   </script>
 
@@ -802,6 +816,17 @@
             </p>
 
             <div class="story-grid" id="storyGrid">
+              <!-- Add newest story cards above older story cards. -->
+              <article class="story-card">
+                <p class="kicker">E'Shae Speaks | Sponsor Feature</p>
+                <h3>Whispers of the Heart</h3>
+                <p>
+                  A featured story space for the upcoming Whispers of the Heart coverage, honoring the message, the sponsors,
+                  and the creative heartbeat behind the production.
+                </p>
+                <a class="btn btn-ghost" href="#story-whispers-of-the-heart">Read Full Story</a>
+              </article>
+
               <article class="story-card">
                 <p class="kicker">E'Shae Speaks | Official Update</p>
                 <h3>Welcome to The Grid Room</h3>
@@ -812,6 +837,33 @@
                 <a class="btn btn-ghost" href="#story-1">Read Full Story</a>
               </article>
             </div>
+
+            <!-- Add newest full story sections above older full stories. -->
+            <article class="story-full" id="story-whispers-of-the-heart">
+              <p class="kicker">E'Shae Speaks | Sponsor Feature</p>
+              <h2 class="h2">Whispers of the Heart</h2>
+              <img class="story-cover" id="whispersCover" alt="Whispers of the Heart article cover" />
+              <p>
+                Whispers of the Heart is more than a title. It is a reminder that some stories speak softly before they are ever spoken out loud.
+                This feature space was created to honor the upcoming production, the heart behind the work, and the creative voices connected to the story.
+              </p>
+              <p>
+                E'Shae Productions is proud to stand as a Gold Member sponsor while helping provide media visibility, editorial coverage,
+                and thoughtful storytelling support for the project. Through E'Shae Speaks, this coverage will highlight the meaning behind the production,
+                the people who helped support it, and the moments that deserve to be remembered beyond opening night.
+              </p>
+              <p>
+                Sponsor features, story notes, reflections, and event updates may be added here as the rollout continues. This article can be edited,
+                expanded, or updated with new paragraphs, sponsor responses, images, and official production details as they are received.
+              </p>
+              <p>
+                Sometimes our hearts have a whisper that only one can hear. This story gives that whisper a place to be seen, honored, and shared.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-ghost" href="#latest-stories">Back to Latest Stories</a>
+                <a class="btn btn-primary booking-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdXeLmsj-8Uj-klSqO56Zrerjdv_syziLVuhteCnzCxabQszw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Request a Feature</a>
+              </div>
+            </article>
 
             <article class="story-full" id="story-1">
               <p class="kicker">E'Shae Speaks | Official Update</p>
@@ -1078,6 +1130,43 @@
       </div>
     </section>
 
+    <section class="section" id="staff">
+      <div class="wrap">
+        <div class="card">
+          <div class="card-pad">
+            <p class="kicker">Official Team Structure</p>
+            <h2 class="h2">E'Shae Productions Staff</h2>
+            <p class="p">
+              E'Shae Productions is supported by creative professionals, event talent, and trusted team members who help bring each experience together with structure, visibility, and care.
+            </p>
+            <div class="three">
+              <div class="promo-box">
+                <h3 class="h3">DJ Talent</h3>
+                <p class="p">
+                  DJ talent supports curated events, themed nights, music experiences, venue energy, and special production moments connected to E'Shae Productions bookings.
+                </p>
+              </div>
+              <div class="promo-box">
+                <h3 class="h3">Security Team</h3>
+                <p class="p">
+                  The Security Team supports events, venues, private functions, guest presence, crowd flow, and professional event environments when booked through E'Shae Productions.
+                </p>
+              </div>
+              <div class="promo-box">
+                <h3 class="h3">Media & Creative Team</h3>
+                <p class="p">
+                  Media and creative support may include photography, video, promotional direction, story coverage, Grid Alert visibility, and branded creative assistance by project.
+                </p>
+              </div>
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-primary booking-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdXeLmsj-8Uj-klSqO56Zrerjdv_syziLVuhteCnzCxabQszw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Book or Apply Through the Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="security">
       <div class="wrap">
         <div class="card">
@@ -1087,11 +1176,15 @@
               Security presence is part of the brand experience. Security members represent the E'Shae Speaks brand while on duty.
               Professionalism, respect, and positivity are mandatory.
             </p>
+            <p class="p">
+              Security may be booked for events, venues, private functions, guest presence, crowd flow, and professional event support.
+              Applicants interested in joining the security team may also apply through the official booking form.
+            </p>
             <div class="two">
               <div>
                 <h3 class="h3">Client Security Outsourcing</h3>
                 <ul class="list">
-                  <li><strong>Services:</strong> presence, crowd flow control, guest management, designated positioning, and support for a safe professional environment.</li>
+                  <li><strong>Services:</strong> presence, crowd flow control, guest management, designated positioning, venue support, private function coverage, and support for a safe professional environment.</li>
                   <li><strong>Payment:</strong> payment is due at the start of the shift unless another agreement is confirmed in advance.</li>
                   <li><strong>Representation:</strong> security represents E'Shae Speaks while on duty.</li>
                   <li><strong>Exclusivity:</strong> security bookings must be made directly through E'Shae Productions.</li>
@@ -1104,6 +1197,8 @@
                   <li>Security support is quoted based on event length, location, expected crowd flow, and requested coverage.</li>
                   <li>Structured or specialty events may require additional staffing, planning time, or media coordination.</li>
                   <li>Security staff are expected to maintain professional conduct, respectful communication, and brand alignment while on duty.</li>
+                  <li>Security can be requested for event entrances, venue flow, guest presence, professional event support, and private functions.</li>
+                  <li>People interested in joining the security team may apply through the official booking form.</li>
                   <li>All final rates, assignments, and expectations are confirmed during the booking process.</li>
                 </ul>
               </div>
@@ -1268,6 +1363,17 @@
     safeSetImage("ed4", ASSETS.ed4);
     safeSetImage("ed5", ASSETS.ed5);
     safeSetImage("ed6", ASSETS.ed6);
+    safeSetImage("whispersCover", ASSETS.whispersCover);
+
+    const whispersCover = document.getElementById("whispersCover");
+    if(whispersCover){
+      whispersCover.addEventListener("load", () => {
+        whispersCover.style.display = "block";
+      });
+      whispersCover.addEventListener("error", () => {
+        whispersCover.style.display = "none";
+      });
+    }
 
     document.querySelectorAll(".booking-link").forEach(link => {
       link.href = BOOKING_FORM_URL;
